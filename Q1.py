@@ -68,3 +68,12 @@ history = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, vali
 
 pandas.DataFrame(history.history).to_csv("history.csv")
 
+import matplotlib.pyplot as plt
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()
+
