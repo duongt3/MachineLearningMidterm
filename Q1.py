@@ -12,7 +12,7 @@ import pandas
 
 batch_size = 256
 num_classes = 10
-epochs = 50
+epochs = 60
 
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 print('x_train shape:', x_train.shape)
@@ -40,7 +40,7 @@ model.add(Conv2D(32, (3, 3)))
 model.add(Activation('relu'))
 
 model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Dropout(0.5))
+model.add(Dropout(0.3))
 
 model.add(Conv2D(64, (3, 3), padding='same'))
 model.add(Activation('relu'))
@@ -49,7 +49,7 @@ model.add(Conv2D(64, (3, 3)))
 model.add(Activation('relu'))
 
 model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Dropout(0.5))
+model.add(Dropout(0.3))
 
 model.add(Flatten())
 
