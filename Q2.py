@@ -23,7 +23,7 @@ depth = 20
 
 # Training parameters
 batch_size = 128  
-epochs = 200
+epochs = 30
 num_classes = 10
 
 model_type = 'ResNet%d' % (depth)
