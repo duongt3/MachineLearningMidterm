@@ -19,7 +19,7 @@ import pandas
 
 # Netwrok depth
 # Please explore depths of [20, 32, 44, 56]
-depth = 20
+depth = 32
 
 # Training parameters
 batch_size = 128  
@@ -177,5 +177,5 @@ callbacks = [checkpoint, lr_reducer, lr_scheduler]
 
 history = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_data=(x_test, y_test), shuffle=True, callbacks=callbacks)
 
-pandas.DataFrame(history.history).to_csv("history_20_skip.csv")
+pandas.DataFrame(history.history).to_csv("history_32_skip.csv")
 
