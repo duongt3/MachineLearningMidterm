@@ -19,7 +19,7 @@ import pandas
 
 # Netwrok depth
 # Please explore depths of [20, 32, 44, 56]
-depth = 56
+depth = 20
 
 # Training parameters
 batch_size = 128  
@@ -140,8 +140,8 @@ def resnet_create(input_shape, depth, num_classes=10):
                 # linear projection residual shortcut connection to match changed dims
                 x = resnet_layer(inputs=x, num_filters=num_filters, kernel_size=1, strides=strides, activation=None, batch_normalization=False)
             # Add skip connection
-            x = keras.layers.add([x, y])
-            x = Activation('relu')(x)
+            # x = keras.layers.add([x, y])
+            # x = Activation('relu')(x)
         num_filters *= 2                    # Increase number of filter
 
     # Add classifier on top.
@@ -177,5 +177,5 @@ callbacks = [checkpoint, lr_reducer, lr_scheduler]
 
 history = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_data=(x_test, y_test), shuffle=True, callbacks=callbacks)
 
-pandas.DataFrame(history.history).to_csv("history_56.csv")
+pandas.DataFrame(history.history).to_csv("history_20_skip.csv")
 
