@@ -7,7 +7,7 @@ import keras
 from keras.models import Model
 from keras.layers import Conv2D, MaxPooling2D, MaxPool2D
 from keras.layers import Flatten, Dense
-from keras.layers import Input
+from keras.layers import Input,Dropout, Dense, Input, concatenate, GlobalAveragePooling2D, AveragePooling2D, Flatten
 from keras.utils import np_utils
 from keras.datasets import cifar10
 
