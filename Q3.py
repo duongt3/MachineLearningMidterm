@@ -57,7 +57,7 @@ def inception_module(x,
 kernel_init = keras.initializers.glorot_uniform()
 bias_init = keras.initializers.Constant(value=0.2)
 
-x = = inception_module(input_img,
+x = inception_module(input_img,
                      filters_1x1=64,
                      filters_3x3_reduce=96,
                      filters_3x3=128,
