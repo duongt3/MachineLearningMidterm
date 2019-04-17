@@ -29,7 +29,7 @@ raw_text = fClean_Load('Unhappy.txt')
 #################################################################################
 ############################# Select a Size of 5/10/20/30/40/50 ####################
 ##################################################################################
-length = 30
+length = 40
 lines = list()
 for i in range(length, len(raw_text)):
     seq = raw_text[i-length:i+1]
@@ -72,7 +72,7 @@ model.fit(X, y, epochs=100, verbose=1)
 
 
 # save the model and mapping to file
-model.save('model30.h5')
+model.save('model40.h5')
 dump(mapping, open('mapping.pkl', 'wb'))
 
 
