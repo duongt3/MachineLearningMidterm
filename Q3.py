@@ -5,7 +5,7 @@ Q3 Inception Module for CIFAR-10 dataset
 '''
 import keras
 from keras.models import Model
-from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Conv2D, MaxPooling2D, MaxPool2D
 from keras.layers import Flatten, Dense
 from keras.layers import Input
 from keras.utils import np_utils
