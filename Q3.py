@@ -11,6 +11,8 @@ from keras.layers import Input
 from keras.utils import np_utils
 from keras.datasets import cifar10
 
+from keras.optimizers import SGD 
+
 epochs = 30
 
 # Get the data
