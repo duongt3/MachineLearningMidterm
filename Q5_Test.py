@@ -16,7 +16,7 @@ seq_length = 100
 
 # load the model and mapping
 model = load_model('LargeLSTM_model_256_4096_100.h5')
-mapping = load(open('LargeLSTM_mapping.pkl', 'rb'))
+mapping = load(open('LargeLSTM_mapping.pkl', 'r'))
 
 # Make predictions
 for k in range(n_chars_to_predict):
