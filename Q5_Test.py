@@ -18,7 +18,6 @@ seq_length = 100
 model = load_model('LargeLSTM_model_256_4096_100.h5')
 mapping = load(open('LargeLSTM_mapping.pkl', 'rb'))
 
-
 # Make predictions
 for k in range(n_chars_to_predict):
     # encode the characters as integers
