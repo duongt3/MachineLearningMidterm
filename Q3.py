@@ -11,7 +11,7 @@ from keras.layers import Input
 from keras.utils import np_utils
 from keras.datasets import cifar10
 
-epochs = 100
+epochs = 30
 
 # Get the data
 (X_train, y_train), (X_test, y_test) = cifar10.load_data()
