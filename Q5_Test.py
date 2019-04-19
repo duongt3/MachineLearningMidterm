@@ -1,6 +1,6 @@
 """
 PS#2
-Q4 (Testing) - A Small Character Level LSTM
+Q5 (Testing) - A Small Character Level LSTM
 Loads a trained LSTM and mapping and generates sentences
 
 """
@@ -10,9 +10,9 @@ from keras.models import load_model
 from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
 
-seed_text = 'you will probably be prepared to admit that you are not exceptional'
-n_chars_to_predict = 100
-seq_length = 20
+seed_text = "Some of his King's Bench familiars, who were occasionally parties to the full-bodied wine and the lie, excused him"
+n_chars_to_predict = 500
+seq_length = 100
 
 # load the model and mapping
 model = load_model('model.h5')
