@@ -11,6 +11,7 @@ from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.layers import LSTM
+from keras.models import load_model
 
 # Load and clean a text file
 def fClean_Load(filename):
@@ -63,7 +64,7 @@ y = to_categorical(y, num_classes=vocab_size)
 #model.add(Dense(vocab_size, activation='softmax'))
 #model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-model = load('LargeLSTM_model_512_4096_50.h5')
+model = load_model('LargeLSTM_model_512_4096_50.h5')
 print(model.summary())
 model.fit(X, y, epochs= 100 , verbose=1, batch_size= 4096 )
 
