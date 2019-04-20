@@ -11,7 +11,6 @@ from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
 
 seed_text = "the passenger booked by this history was on the coachstep getting in the two other passengers were close behind him and about to follow. he remained on the step half in the coach and half out of they remained"
-seed_text = seed_text + "in the road below him. they all looked from the coachman to the guard and from the guard to the coachman and listened. the coachman looked back and the guard looked back and even the emphatic leader pricked up his ears and looked back without contradicting."
 n_chars_to_predict = 500
 seq_length = 100
 
