@@ -27,7 +27,7 @@ for k in range(n_chars_to_predict):
     encoded = pad_sequences([encoded], maxlen=seq_length, truncating='pre')
     # one hot encode
     encoded = encoded / float(len(mapping))
-    encoded = np.reshape(encoded, (encoded.shape[0], length, 1))
+    encoded = np.reshape(encoded, (encoded.shape[0], seq_length, 1))
     # predict character
     yhat = model.predict_classes(encoded, verbose=0)
     
