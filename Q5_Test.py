@@ -9,6 +9,7 @@ from pickle import load
 from keras.models import load_model
 from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
+import numpy as np
 
 seed_text = "the passenger booked by this history was on the coachstep getting in the two other passengers were close behind him and about to follow. he remained on the step half in the coach and half out of they remained"
 n_chars_to_predict = 500
