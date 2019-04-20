@@ -10,7 +10,7 @@ from keras.models import load_model
 from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
 
-seed_text = "Some of his King's Bench familiars, who were occasionally parties to the full-bodied wine and the lie, excused him"
+seed_text = "some of his kings bench familiars who were occasionally parties to the full bodied wine and the lie excused him"
 n_chars_to_predict = 500
 seq_length = 100
 
