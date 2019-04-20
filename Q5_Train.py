@@ -66,7 +66,7 @@ y = to_categorical(y, num_classes=vocab_size)
 
 model = load_model('LargeLSTM_model_512_4096_50.h5')
 print(model.summary())
-model.fit(X, y, epochs= 100 , verbose=1, batch_size= 4096 )
+model.fit(X, y, epochs= 50 , verbose=1, batch_size= 4096 )
 
 # Save and test using code from the Q4_Test
 model.save('LargeLSTM_model_256_4096_100.h5')
